@@ -1,0 +1,25 @@
+@import '../abstract/variaveis';
+
+nav {
+    text-align: center;
+    background: $cor-secundaria;
+    padding: 0.5rem;
+    ul {
+        li {
+            display: inline-block;
+            padding: 1rem;
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: $tamanho-do-texto / 3;
+                font-weight: 300;
+                color: $cor-primaria;
+                transition: 150ms;
+                &:hover{
+                    border-bottom: 2px solid $cor-primaria;
+                    color: $cor-terciaria;
+                }
+            }
+        }
+    }
+}

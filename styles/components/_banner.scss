@@ -1,0 +1,31 @@
+@import '../abstract/variaveis';
+
+.banner {
+    background: url(../imagens/banner.jpeg) 27% center no-repeat;
+    min-height: 350px;
+    background-size: cover;
+    /*ocupa todo o espaço disponivel automaticamente*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 2rem;;
+    opacity: 0.9;
+    .inner-banner {
+        margin-left: -10%;
+        padding: 2rem 3.5rem 2rem 15rem;
+        background: linear-gradient(90deg, $cor-terciaria,$cor-primaria);
+        border-radius: 100px;
+        opacity: 0.9;
+        h1 {
+            font-size: $tamanho-do-texto;
+            color: $cor-secundaria;
+            font-weight: bold;
+            letter-spacing: 0.5rem;
+        }
+        h2 {
+            font-size: $tamanho-do-texto/2;
+            color: $cor-secundaria;
+            font-weight: 300;
+        }
+    }
+}
